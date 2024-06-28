@@ -19,10 +19,4 @@ This is a simple Flutter weather app that I built while learning the basics of F
 2. Press the search icon or "Enter" to get the weather data.
 3. Use the refresh icon in the app bar to update the information.
 
-## Contributing
 
-Feel free to open an issue or submit a pull request if you have any suggestions or find any problems. 
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
