@@ -4,14 +4,14 @@ This is a simple Flutter weather app that I built while learning the basics of F
 
 ## Features
 
-- Displays current temperature, weather condition (e.g., sunny, cloudy), humidity, wind speed, and pressure.
+- Displays current temperature, weather conditions (e.g., sunny, cloudy), humidity, wind speed, and pressure.
 - Shows an hourly forecast for the next few hours.
 - Allows users to search for weather information by city name.
 - Refreshes weather data on demand.
 
 ## Screenshots
 
-*(Add screenshots of your app here)*
+![screenshot](screenshot.jpg)
 
 ## Usage
 
