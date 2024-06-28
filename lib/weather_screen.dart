@@ -6,6 +6,7 @@ import 'package:weather_app/additional_info_item.dart';
 import 'package:weather_app/hourly_forecast_item.dart';
 import 'package:http/http.dart' as http;
 import 'package:weather_app/secrets.dart';
+import 'package:permission_handler/permission_handler.dart';
 
 class WeatherScreen extends StatefulWidget {
   const WeatherScreen({super.key});
@@ -18,6 +19,13 @@ class _WeatherScreenState extends State<WeatherScreen> {
   late Future<Map<String, dynamic>> weather;
   String cityName = 'Hyderabad';
   final TextEditingController cityController = TextEditingController();
+
+   @override
+  void initState() {
+    super.initState();
+    requestInternetPermission();
+    weather = getCurrentWeather();
+  }
 
   Future<Map<String, dynamic>> getCurrentWeather() async {
     try {
@@ -39,11 +47,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
     }
   }
 
-  @override
-  void initState() {
-    super.initState();
-    weather = getCurrentWeather();
-  }
+
 
   void updateCity() {
     setState(() {
@@ -51,6 +55,12 @@ class _WeatherScreenState extends State<WeatherScreen> {
       weather = getCurrentWeather();
     });
   }
+  void requestInternetPermission() async {
+  var status = await Permission.location.status;
+  if (!status.isGranted) {
+    await Permission.location.request();
+  }
+}
 
   @override
   Widget build(BuildContext context) {
