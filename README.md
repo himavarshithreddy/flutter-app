@@ -1,16 +1,28 @@
-# myapp
+# Weather App - Flutter
 
-A new Flutter project.
+This is a simple Flutter weather app that I built while learning the basics of Flutter development. It was one of my first projects to get hands-on experience with the framework. 
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- Displays current temperature, weather condition (e.g., sunny, cloudy), humidity, wind speed, and pressure.
+- Shows an hourly forecast for the next few hours.
+- Allows users to search for weather information by city name.
+- Refreshes weather data on demand.
 
-A few resources to get you started if this is your first Flutter project:
+## Screenshots
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+*(Add screenshots of your app here)*
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Usage
+
+1. Enter a city name in the search field.
+2. Press the search icon or "Enter" to get the weather data.
+3. Use the refresh icon in the app bar to update the information.
+
+## Contributing
+
+Feel free to open an issue or submit a pull request if you have any suggestions or find any problems. 
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
