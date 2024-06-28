@@ -11,7 +11,7 @@ This is a simple Flutter weather app that I built while learning the basics of F
 
 ## Screenshots
 
-![screenshot](screenshot.jpg | width=100)
+<img src="screenshot.jpg" width="100" height="100">
 
 ## Usage
 
